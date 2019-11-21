@@ -6,7 +6,7 @@ A sticky, random post plugin for WordPress
 * [Fontawesome 5](https://fontawesome.com/)
 
 ### Usage
-*where **$post_type** is the **Post Type Slug***
+> where **$post_type** is the **Post Type Slug**
 
 ###### via WYSIWYG
 ```[ sticky_post $post_type ]```

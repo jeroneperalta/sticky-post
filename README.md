@@ -10,10 +10,11 @@ A sticky, random post plugin for WordPress
 1. Download and extract
 2. Upload the downloaded file
 3. Use the shortcode below:
-###### via WYSIWYG
+
+* via **WYSIWYG**
 ```[ sticky_post $post_type ]```
 
-###### via PHP
+* via **PHP** 
 ```<?php echo do_shortcode( '[ sticky_post $post_type ]' ); ?>```
 
 ### Reminders

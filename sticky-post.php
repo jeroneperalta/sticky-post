@@ -45,7 +45,7 @@ function sticky_post_shortcode( $atts ) {
                         <div class="sticky-post--header-inner">
                             <div class="sticky-post--thumbnail-wrapper">
                                 <?php if ( has_post_thumbnail() ) : ?>
-                                    <?php echo get_the_post_thumbnail( $post, 'sticky-post--thumbnail', array( 'alt' => 'Customer Thumbnial' ) ); ?>
+                                    <?php the_post_thumbnail( 'sticky-post--thumbnail', array( 'class' => 'sticky-post--thumbnail', 'alt' => 'Customer Thumbnial' ) ); ?>
                                 <?php else : ?>
                                     
                                     <div class="sticky-post--thumbnail-placeholder placeholder-text-value">

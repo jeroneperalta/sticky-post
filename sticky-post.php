@@ -1,7 +1,7 @@
 <?php 
 /**
  * Plugin Name: Sticky Post
- * Plugin URI: https://github.com/jeroneperalta
+ * Plugin URI: https://github.com/jeroneperalta/sticky-post
  * Description: A sticky, random post.
  * Version: 1.0
  * Author: Jerone Peralta

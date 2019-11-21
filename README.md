@@ -16,7 +16,7 @@ A sticky, random post plugin for WordPress
 ###### via PHP
 ```<?php echo do_shortcode( '[ sticky_post $post_type ]' ); ?>```
 
-> where **$post_type** is the **Post Type Slug**
-
-> parent wrapper should have a css property of 
+### Reminders
+* where ``$post_type`` is the **Post Type Slug**
+* parent wrapper should have a css property of 
 ```position: relative;```

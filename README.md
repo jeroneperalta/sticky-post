@@ -1,5 +1,5 @@
 # sticky-post
-A sticky, random post plugin for WordPress
+A sticky, random post plugin for WordPress.
 
 ### Requirements
 * [Bootstrap 4](https://getbootstrap.com/)

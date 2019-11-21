@@ -88,6 +88,11 @@
   margin-right: 1rem;
 }
 
+.sticky-post--thumbnail {
+  width: 44px;
+  height: 44px;
+}
+
 .sticky-post--thumbnail-wrapper {
   display: -webkit-box;
   display: -webkit-flex;

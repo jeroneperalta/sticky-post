@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
 
-    stickyTestimonial();
+    stickyPost();
     placeholderText();
 
     jQuery(window).resize(function () {
@@ -8,17 +8,17 @@ jQuery(document).ready(function() {
          * initialize
          *------------------------
          */
-        stickyTestimonial();
+        stickyPost();
     });
 
-    function stickyTestimonial() {
+    function stickyPost() {
         var viewportWidth = jQuery(window).width();
         if (viewportWidth > 576) {
-            jQuery( '.sticky-testimonial--accordion-button' ).removeClass( 'collapsed' );
-            jQuery( '.sticky-testimonial--accordion-content' ).addClass( 'show' );
+            jQuery( '.sticky-post--accordion-button' ).removeClass( 'collapsed' );
+            jQuery( '.sticky-post--accordion-content' ).addClass( 'show' );
         } else {
-            jQuery( '.sticky-testimonial--accordion-button' ).addClass( 'collapsed' );
-            jQuery( '.sticky-testimonial--accordion-content' ).removeClass( 'show' );
+            jQuery( '.sticky-post--accordion-button' ).addClass( 'collapsed' );
+            jQuery( '.sticky-post--accordion-content' ).removeClass( 'show' );
         }
     }
     function placeholderText() {
@@ -35,7 +35,6 @@ jQuery(document).ready(function() {
                 return initials
             }
             jQuery( this ).parent().find( '.placeholder-text-value' ).text( getInitials(name) );
-            console.log( getInitials(name) );
         });
     }
 });

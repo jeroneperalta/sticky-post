@@ -19,7 +19,7 @@ jQuery(document).ready(function() {
 
 
     function contentHeight() {
-        var contentHeight = jQuery( '.sticky-post--accordion-content > div' ).height();
+        var contentHeight = jQuery( '.sticky-post--accordion-content > *' ).height();
         return contentHeight;
     }
 

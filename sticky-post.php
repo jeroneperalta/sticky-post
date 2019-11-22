@@ -22,12 +22,15 @@ add_action( 'wp_enqueue_scripts', 'sticky_post_scripts' );
  */
 function sticky_post_shortcode( $atts ) {
 
-    print_r( $atts );
+    $ret_post_type = ( !empty ( $atts ) ) ? $atts[0] : 'post' ;
+    $ret_theme = ( !empty ( $atts ) ) ? $atts[1] : 'light' ;
+
+    // print_r( $atts );
 
     ob_start();
 
         $args = array(
-            'post_type' => $atts['post_type'],
+            'post_type' => $ret_post_type,
             'posts_per_page' => 1,
             'orderby'        => 'rand',
         );
@@ -37,11 +40,14 @@ function sticky_post_shortcode( $atts ) {
         
         <?php 
         while ( $loop->have_posts() ) : $loop->the_post(); 
+        $title = get_the_title();
+        $ret_title = ( $title ) ? $title : 'Anonymous' ;
         $rating = get_field( 'rating' );
         $location = get_field( 'location' );
+        $content = get_post()->post_content;
         ?>
         
-            <div class="sticky-post frosted <?php echo $atts['theme']; ?>">
+            <div class="sticky-post frosted <?php echo $ret_theme ; ?>">
                 <div class="sticky-post--inner">
                     <div class="sticky-post--header">
                         <div class="sticky-post--header-inner">
@@ -51,14 +57,14 @@ function sticky_post_shortcode( $atts ) {
                                 <?php else : ?>
                                     
                                     <div class="sticky-post--thumbnail-placeholder placeholder-text-value">
-                                        <div class="placeholder-text-source"><?php echo get_the_title(); ?></div>
+                                        <div class="placeholder-text-source"><?php echo $ret_title; ?></div>
                                         <div class="placeholder-text-value"></div>
                                     </div>
                                 <?php endif; ?>
                             </div>
                             <div class="sticky-post--details">
                                 <p class="sticky-post--name">
-                                    <?php echo get_the_title(); ?>
+                                    <?php echo $ret_title; ?>
                                 </p>
                                 <?php if ( $location ) : ?>
                                     <p class="sticky-post--location">
@@ -71,11 +77,17 @@ function sticky_post_shortcode( $atts ) {
                         <!-- <a data-toggle="collapse" href="#sticky-post-content" class="sticky-post--accordion-button">
                             <div>❮</div>
                         </a> -->
-                        <button id="sticky-post--accordion-button" class="sticky-post--accordion-button minimize"></button>
+                        <?php if ( $content !== '' ) : ?>
+                            <button id="sticky-post--accordion-button" class="sticky-post--accordion-button minimize"></button>
+                        <?php endif; ?>
                     </div>
-                    <div id="sticky-post--accordion-content" class="sticky-post--accordion-content">
-                            <?php echo get_the_content(); ?>
-                    </div>
+                    <?php if ( $content !== '' ) : ?>
+                        <div id="sticky-post--accordion-content" class="sticky-post--accordion-content">
+                            <div>
+                                <?php echo $content; ?>
+                            </div>
+                        </div>
+                    <?php endif; ?>
                     <?php if ( $rating ) : ?>
                         <div class="sticky-post--footer">
                             <ul class="sticky-post-rating-items value">

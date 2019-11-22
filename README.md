@@ -14,7 +14,4 @@ A sticky, random post plugin for WordPress.
 
 4. Paste it before ```<header></header>``` in your **header.php**
 
-### Reminders
-* parent wrapper should have a css property of 
-```position: relative;```
-
+   _* parent wrapper should have a css property of ```position: relative;```_

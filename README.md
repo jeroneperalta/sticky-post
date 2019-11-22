@@ -12,7 +12,7 @@ A sticky, random post plugin for WordPress.
      Option | Type | Description | Defaults | e.g.
      ------------ | ------------- | ------------- | ------------- | -------------
      $post_type | String | The Post Type Slug | ```post``` | ```testimonial```
-     $theme |  light \| dark | Your desired color theme | ```light``` | ```dark```
+     $theme |  light \| dark | Switch between light & dark theme | ```light``` | ```dark```
      
      **Usage:** ```<?php echo do_shortcode( '[sticky_post post dark]' ); ?>```
 

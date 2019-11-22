@@ -3,7 +3,6 @@
 ---------------------------------------*/
 .sticky-post {
   position: fixed;
-  overflow: hidden !important;
   -webkit-border-radius: 1rem;
   border-radius: 1rem;
   max-width: 336px;
@@ -13,16 +12,17 @@
   z-index: 3;
   font-size: 14px;
   color: #222;
-  border-radius: 1rem;
-  background-color: rgba(255, 255, 255, 0.8);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
+  
   -webkit-box-shadow: 0px 10px 20px rgba(203, 203, 203, 0.25);
           box-shadow: 0px 10px 20px rgba(203, 203, 203, 0.25);
 }
 
 .sticky-post--inner {
   position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
   padding: 1rem;
 }
 
@@ -241,8 +241,8 @@
 /*----------------------------------------
 # Light
 ---------------------------------------*/
-.sticky-post,
-.light.sticky-post {
+.sticky-post--inner,
+.light .sticky-post--inner {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -277,7 +277,7 @@
 /*----------------------------------------
 # Dark
 ---------------------------------------*/
-.dark.sticky-post {
+.dark .sticky-post--inner {
   background-color: rgba(34, 34, 34, 0.8);
 }
 

@@ -47,7 +47,7 @@ function sticky_post_shortcode( $atts ) {
         $content = get_post()->post_content;
         ?>
         
-            <div class="sticky-post frosted <?php echo $ret_theme ; ?>">
+            <div class="sticky-post <?php echo $ret_theme ; ?>">
                 <div class="sticky-post--inner">
                     <div class="sticky-post--header">
                         <div class="sticky-post--header-inner">

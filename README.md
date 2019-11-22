@@ -11,11 +11,13 @@ A sticky, random post plugin for WordPress.
      ------------ | ------------- | ------------- | ------------- | -------------
      $post_type | String | The Post Type Slug | ```post``` | ```testimonial```
      $theme |  light \| dark | Your desired color theme | ```light``` | ```dark```
+     
+     **e.g.** ```<?php echo do_shortcode( '[sticky_post testimonial dark]' ); ?>```
 
 4. Paste it before ```<header></header>``` in your **header.php**
 
    _* parent wrapper should have a css property of ```position: relative;```_
 
 ### Extra Fields
-In your current post type, you can add 2 extra **custom fields** namely ```location```_(string)_ and ```rating```_(int)_.
+In your current post type, you can add 2 extra [**custom fields**](https://www.advancedcustomfields.com/) namely ```location```_(string)_ and ```rating```_(int)_.
 Sticky Post will then display those values.

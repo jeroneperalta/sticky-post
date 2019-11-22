@@ -136,11 +136,13 @@
 
 .sticky-post--accordion-content > * {
   margin-bottom: 0;
-  line-height: 1.25rem;
 }
 
 .sticky-post--accordion-content * {
   font-size: 0.85rem;
+  margin-bottom: auto;
+  font-family: inherit;
+  line-height: 1.25rem;
 }
 
 

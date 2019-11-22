@@ -1,7 +1,13 @@
 jQuery(document).ready(function() {
 
-    stickyPost();
+    var accordionButton = jQuery( '#sticky-post--accordion-button' );
+    var accordionContent = jQuery( '#sticky-post--accordion-content' );
+    
+    // stickyPost();
     placeholderText();
+    stickyPost();
+
+    accordionToggle();
 
     jQuery(window).resize(function () {
         /*------------------------
@@ -11,16 +17,46 @@ jQuery(document).ready(function() {
         stickyPost();
     });
 
+
+    function contentHeight() {
+        var contentHeight = jQuery( '.sticky-post--accordion-content > div' ).height();
+        return contentHeight;
+    }
+
     function stickyPost() {
-        var viewportWidth = jQuery(window).width();
-        if (viewportWidth > 576) {
-            jQuery( '.sticky-post--accordion-button' ).removeClass( 'collapsed' );
-            jQuery( '.sticky-post--accordion-content' ).addClass( 'show' );
+        contentHeight();
+        var viewportWidth = jQuery(window).outerWidth();
+        is_minimized(accordionContent);
+        if (viewportWidth < 577) {
+            accordionButton.addClass( 'minimize' );
+            accordionContent.addClass( 'minimize' );
         } else {
-            jQuery( '.sticky-post--accordion-button' ).addClass( 'collapsed' );
-            jQuery( '.sticky-post--accordion-content' ).removeClass( 'show' );
+            accordionButton.removeClass( 'minimize' );
+            accordionContent.removeClass( 'minimize' );
         }
     }
+
+    function accordionToggle() {
+        is_minimized(accordionContent);
+        accordionButton.click(function() {
+            accordionButton.toggleClass( 'minimize' );
+            accordionContent.toggleClass( 'minimize' );
+            is_minimized(accordionContent);
+        });
+    }
+
+    function is_minimized(content) {
+        if ( content.hasClass( 'minimize' ) ) {
+            content.css({
+                'height' :  0,
+            });
+        } else {
+            content.css({
+                'height' :  contentHeight,
+            });
+        }
+    }
+
     function placeholderText() {
         jQuery( '.placeholder-text-source' ).each(function() {
             var name = jQuery( this ).text();

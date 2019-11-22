@@ -5,31 +5,26 @@
       </head>
       <body>
         <h1 id="sticky-post">sticky-post</h1>
-<p>A sticky, random post plugin for WordPress</p>
-<h3 id="requirements">Requirements</h3>
-<ul>
-<li><a href="https://getbootstrap.com/">Bootstrap 4</a></li>
-<li><a href="https://fontawesome.com/">Fontawesome 5</a></li>
-</ul>
-<h3 id="usage">Usage</h3>
+<p>A sticky, random post plugin for WordPress.</p>
+<h3 id="instructions">Instructions</h3>
 <ol>
-<li>Download and extract</li>
+<li>Download</li>
 <li>Upload the downloaded file</li>
-<li><p>Use the shortcode below:</p>
+<li><p>Shortcode syntax:</p>
+<p> [sticky_post post_type=&quot;<strong>$post</strong>&quot; theme=&quot;<strong>$theme</strong>&quot;]</p>
+<p>  Option | Type | Description | Defaults | e.g.
+  ------------ | ------------- | ------------- | ------------- | -------------
+  $post_type | String | The Post Type Slug | <code>post</code> | <code>testimonial</code>
+  $theme |  light | dark | Switch between light &amp; dark theme | <code>light</code> | <code>dark</code></p>
+<p>  <strong>Usage:</strong> <code>&lt;?php echo do_shortcode( &#39;[sticky_post post_type=&quot;post&quot; theme=&quot;dark&quot;]&#39; ); ?&gt;</code></p>
 </li>
-<li><p>via <strong>WYSIWYG</strong>
-<code>[ sticky_post $post_type ]</code></p>
-</li>
-<li><p>via <strong>PHP</strong> 
-<code>&lt;?php echo do_shortcode( &#39;[ sticky_post $post_type ]&#39; ); ?&gt;</code></p>
+<li><p>Paste it inside <code>&lt;body&gt;</code> tag.</p>
+<p><em>* parent wrapper should have a css property of <code>position: relative;</code></em></p>
 </li>
 </ol>
-<h3 id="reminders">Reminders</h3>
-<ul>
-<li>where <code>$post_type</code> is the <strong>Post Type Slug</strong></li>
-<li>parent wrapper should have a css property of 
-<code>position: relative;</code></li>
-</ul>
+<h3 id="extra-fields">Extra Fields</h3>
+<p>In your current post type, you can add 2 extra <a href="https://www.advancedcustomfields.com/"><strong>custom fields</strong></a> namely <code>location</code><em>(string)</em> and <code>rating</code><em>(int)</em>.
+Sticky Post will then display those values.</p>
 
       </body>
     </html>

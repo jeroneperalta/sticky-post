@@ -3,7 +3,7 @@
 ---------------------------------------*/
 .sticky-post {
   position: fixed;
-  overflow: hidden;
+  overflow: hidden !important;
   -webkit-border-radius: 1rem;
   border-radius: 1rem;
   max-width: 336px;

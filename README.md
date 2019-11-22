@@ -5,7 +5,9 @@ A sticky, random post plugin for WordPress.
 
 1. Download
 2. Upload the downloaded file
-3. Shortcode syntax [sticky **$post $theme**]
+3. Shortcode syntax:
+
+    [sticky **$post $theme**]
 
      Option | Type | Description | Defaults | e.g.
      ------------ | ------------- | ------------- | ------------- | -------------

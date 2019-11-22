@@ -19,5 +19,5 @@ A sticky, random post plugin for WordPress.
    _* parent wrapper should have a css property of ```position: relative;```_
 
 ### Extra Fields
-In your current post type, you can add 2 extra [**custom fields**](https://www.advancedcustomfields.com/){:target="_blank" rel="noopener"} namely ```location```_(string)_ and ```rating```_(int)_.
+In your current post type, you can add 2 extra [**custom fields**](https://www.advancedcustomfields.com/) namely ```location```_(string)_ and ```rating```_(int)_.
 Sticky Post will then display those values.

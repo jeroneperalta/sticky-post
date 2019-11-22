@@ -7,14 +7,14 @@ A sticky, random post plugin for WordPress.
 2. Upload the downloaded file
 3. Shortcode syntax:
 
-    [sticky **$post $theme**]
+    [sticky_post post_type="**$post**" theme="**$theme**"]
 
      Option | Type | Description | Defaults | e.g.
      ------------ | ------------- | ------------- | ------------- | -------------
      $post_type | String | The Post Type Slug | ```post``` | ```testimonial```
      $theme |  light \| dark | Switch between light & dark theme | ```light``` | ```dark```
      
-     **Usage:** ```<?php echo do_shortcode( '[sticky_post post dark]' ); ?>```
+     **Usage:** ```<?php echo do_shortcode( '[sticky_post post_type="post" theme="dark"]' ); ?>```
 
 4. Paste it inside ```<body>``` tag.
 

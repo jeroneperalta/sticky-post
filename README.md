@@ -10,7 +10,7 @@ A sticky, random post plugin for WordPress.
      Option | Type | Description
      ------------ | ------------- | -------------
      $post_type | String |  Default: ```post``` <br> The Post Type Slug. <br> e.g. ```testimonial```
-     $theme | "light \| "dark" | Default: ```light``` <br> Desired color theme. <br> e.g. ```dark```
+     $theme |  light \| dark | Default: ```light``` <br> Your desired color theme. <br> e.g. ```dark```
 
 4. Paste it before ```<header></header>``` in your **header.php**
 

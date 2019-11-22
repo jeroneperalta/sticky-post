@@ -1,7 +1,7 @@
 # sticky-post
 A sticky, random post plugin for WordPress.
 
-### Usage
+### Instructions
 
 1. Download
 2. Upload the downloaded file
@@ -12,7 +12,7 @@ A sticky, random post plugin for WordPress.
      $post_type | String | The Post Type Slug | ```post``` | ```testimonial```
      $theme |  light \| dark | Your desired color theme | ```light``` | ```dark```
      
-     **e.g.** ```<?php echo do_shortcode( '[sticky_post post dark]' ); ?>```
+     **Usage:** ```<?php echo do_shortcode( '[sticky_post post dark]' ); ?>```
 
 4. Paste it before ```<header></header>``` in your **header.php**
 

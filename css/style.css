@@ -137,8 +137,12 @@
 .sticky-post--accordion-content > * {
   margin-bottom: 0;
   line-height: 1.25rem;
+}
+
+.sticky-post--accordion-content * {
   font-size: 0.85rem;
 }
+
 
 
 .sticky-post--footer {
@@ -324,7 +328,7 @@
     font-size: 12px;
   }
 
-  .sticky-post--accordion-content > * {
+  .sticky-post--accordion-content * {
     font-size: 12px;
   }
 

@@ -14,7 +14,7 @@ A sticky, random post plugin for WordPress.
      
      **Usage:** ```<?php echo do_shortcode( '[sticky_post post dark]' ); ?>```
 
-4. Paste it before ```<header></header>``` in your **header.php**
+4. Paste it inside ```<body>``` tag.
 
    _* parent wrapper should have a css property of ```position: relative;```_
 

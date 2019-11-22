@@ -169,6 +169,7 @@
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
+  line-height: normal;
 }
 
 .sticky-post--accordion-button.minimize {

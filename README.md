@@ -15,3 +15,7 @@ A sticky, random post plugin for WordPress.
 4. Paste it before ```<header></header>``` in your **header.php**
 
    _* parent wrapper should have a css property of ```position: relative;```_
+
+### Extra Fields
+In your current post type, you can add 2 extra **custom fields** namely ```location```_(string)_ and ```rating```_(int)_.
+Sticky Post will then display those values.

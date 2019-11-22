@@ -133,9 +133,11 @@
   font-size: 18px;
 }
 
-.sticky-post--accordion-content p {
+
+.sticky-post--accordion-content > * {
   margin-bottom: 0;
   line-height: 1.25rem;
+  font-size: 0.85rem;
 }
 
 
@@ -322,7 +324,7 @@
     font-size: 12px;
   }
 
-  .sticky-post--accordion-content {
+  .sticky-post--accordion-content > * {
     font-size: 12px;
   }
 

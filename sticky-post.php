@@ -22,10 +22,13 @@ add_action( 'wp_enqueue_scripts', 'sticky_post_scripts' );
  */
 function sticky_post_shortcode( $atts ) {
 
-    $ret_post_type = ( !empty ( $atts ) ) ? $atts[0] : 'post' ;
-    $ret_theme = ( !empty ( $atts ) ) ? $atts[1] : 'light' ;
+    $attributes = shortcode_atts( array(
+        'post_type' => 'post',
+        'theme'  =>  'light'
+    ), $atts );
 
-    // print_r( $atts );
+    $ret_post_type = $attributes['post_type'];
+    $ret_theme = $attributes['theme'];
 
     ob_start();
 

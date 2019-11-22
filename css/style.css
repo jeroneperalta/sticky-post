@@ -155,6 +155,11 @@
   height: 20px;
 }
 
+.sticky-post--accordion-button:focus, 
+.sticky-post--accordion-button:active {
+  outline: none;
+}
+
 
 .sticky-post--accordion-button:before {
   content: '❮';

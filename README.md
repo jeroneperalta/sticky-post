@@ -3,9 +3,8 @@ A sticky, random post plugin for WordPress.
 
 ### Instructions
 
-1. Download
-2. Upload the downloaded file
-3. Shortcode syntax:
+1. Upload the downloaded file
+2. Shortcode syntax:
 
     [sticky_post post_type="**$post**" theme="**$theme**"]
 
@@ -16,7 +15,7 @@ A sticky, random post plugin for WordPress.
      
      **Usage:** ```<?php echo do_shortcode( '[sticky_post post_type="post" theme="dark"]' ); ?>```
 
-4. Paste it inside ```<body>``` tag.
+3. Paste it inside ```<body>``` tag.
 
    _* parent wrapper should have a css property of ```position: relative;```_
 

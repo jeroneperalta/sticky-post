@@ -1,7 +1,7 @@
 # sticky-post
 A sticky, random post plugin for WordPress.
 
-### Instructions
+### How to use
 
 1. Upload the downloaded file
 2. Shortcode syntax:
@@ -18,8 +18,12 @@ A sticky, random post plugin for WordPress.
 3. Paste it inside ```<body>``` tag.
 
    _* parent wrapper should have a css property of ```position: relative;```_
-   
-   _* Desktop = maximized display; Mobile = minimized display_
+
+### Display
+
+* on Desktop = maximized display
+    
+* on Mobile = minimized display
 
 ### Extra Fields
 In your current post type, you can add 2 extra [**custom fields**](https://www.advancedcustomfields.com/) namely ```location```_(string)_ and ```rating```_(int)_.

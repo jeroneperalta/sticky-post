@@ -144,12 +144,9 @@
   line-height: 1.25rem;
 }
 
-
-
 .sticky-post--footer {
   position: relative;
 }
-
 
 .sticky-post--accordion-button {
   position: relative;
@@ -167,7 +164,6 @@
 .sticky-post--accordion-button:active {
   outline: none;
 }
-
 
 .sticky-post--accordion-button:before {
   content: '❮';
@@ -303,8 +299,9 @@
   background-color: #fff;
 }
 
-
-
+/*----------------------------------------
+# Media Queries
+---------------------------------------*/
 @media (max-width: 576px) {
   .sticky-post {
     max-width: 230px;

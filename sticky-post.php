@@ -50,7 +50,7 @@ function sticky_post_shortcode( $atts ) {
         $content = get_post()->post_content;
         ?>
         
-            <div class="sticky-post <?php echo $ret_theme ; ?>">
+            <div id="sticky-post" class="sticky-post <?php echo $ret_theme ; ?>">
                 <div class="sticky-post--inner">
                     <div class="sticky-post--header">
                         <div class="sticky-post--header-inner">
@@ -77,9 +77,6 @@ function sticky_post_shortcode( $atts ) {
                                 
                             </div>
                         </div>
-                        <!-- <a data-toggle="collapse" href="#sticky-post-content" class="sticky-post--accordion-button">
-                            <div>❮</div>
-                        </a> -->
                         <?php if ( $content !== '' ) : ?>
                             <button id="sticky-post--accordion-button" class="sticky-post--accordion-button minimize"></button>
                         <?php endif; ?>

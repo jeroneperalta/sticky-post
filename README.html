@@ -6,22 +6,28 @@
       <body>
         <h1 id="sticky-post">sticky-post</h1>
 <p>A sticky, random post plugin for WordPress.</p>
-<h3 id="instructions">Instructions</h3>
+<h3 id="how-to-use">How to use</h3>
 <ol>
-<li>Download</li>
 <li>Upload the downloaded file</li>
 <li><p>Shortcode syntax:</p>
 <p> [sticky_post post_type=&quot;<strong>$post</strong>&quot; theme=&quot;<strong>$theme</strong>&quot;]</p>
 <p>  Option | Type | Description | Defaults | e.g.
   ------------ | ------------- | ------------- | ------------- | -------------
-  $post_type | String | The Post Type Slug | <code>post</code> | <code>testimonial</code>
+  $post_type | String | The post type slug | <code>post</code> | <code>testimonial</code>
   $theme |  light | dark | Switch between light &amp; dark theme | <code>light</code> | <code>dark</code></p>
 <p>  <strong>Usage:</strong> <code>&lt;?php echo do_shortcode( &#39;[sticky_post post_type=&quot;post&quot; theme=&quot;dark&quot;]&#39; ); ?&gt;</code></p>
 </li>
 <li><p>Paste it inside <code>&lt;body&gt;</code> tag.</p>
-<p><em>* parent wrapper should have a css property of <code>position: relative;</code></em></p>
+<p><em>* sticky-post plugin adds <code>position: relative;</code> property to its parent</em></p>
 </li>
 </ol>
+<h3 id="display">Display</h3>
+<ul>
+<li><p>on Desktop = maximized display</p>
+</li>
+<li><p>on Mobile = minimized display</p>
+</li>
+</ul>
 <h3 id="extra-fields">Extra Fields</h3>
 <p>In your current post type, you can add 2 extra <a href="https://www.advancedcustomfields.com/"><strong>custom fields</strong></a> namely <code>location</code><em>(string)</em> and <code>rating</code><em>(int)</em>.
 Sticky Post will then display those values.</p>

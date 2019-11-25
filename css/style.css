@@ -18,7 +18,8 @@
 
 .sticky-post--inner {
   position: relative;
-  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+          border-radius: 1rem;
   overflow: hidden;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);

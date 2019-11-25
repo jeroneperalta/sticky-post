@@ -1,9 +1,16 @@
 jQuery(document).ready(function() {
 
+    /*------------------------
+    * vars
+    *------------------------
+    */
     var accordionButton = jQuery( '#sticky-post--accordion-button' );
     var accordionContent = jQuery( '#sticky-post--accordion-content' );
-    
-    // stickyPost();
+
+    /*------------------------
+    * initialize
+    *------------------------
+    */
     placeholderText();
     stickyPost();
 
@@ -18,6 +25,10 @@ jQuery(document).ready(function() {
     });
 
 
+    /*------------------------
+    * functions
+    *------------------------
+    */
     function contentHeight() {
         var contentHeight = jQuery( '.sticky-post--accordion-content > *' ).height();
         return contentHeight;

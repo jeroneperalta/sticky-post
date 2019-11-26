@@ -17,8 +17,6 @@ A sticky, random post plugin for WordPress.
 
 3. Paste it before ending ```</body>``` tag.
 
-   _* sticky-post plugin adds ```position: relative;``` property to its parent_
-
 ### Display
 
 * on Desktop = maximized display

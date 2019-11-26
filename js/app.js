@@ -35,10 +35,6 @@ jQuery(document).ready(function() {
     }
 
     function stickyPost() {
-        // Add position: rerlative; to the parent
-        jQuery( '#sticky-post' ).parent().css({
-            'position' : 'relative',
-        });
 
         contentHeight();
 

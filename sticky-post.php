@@ -15,7 +15,7 @@ function sticky_post_scripts() {
     wp_enqueue_style( 'sticky-post', plugin_dir_url( __FILE__ ) . 'css/style.css' );
     wp_enqueue_script( 'sticky-post', plugin_dir_url( __FILE__ ) . 'js/app.js', '', '', true );
 }
-add_action( 'wp_enqueue_scripts', 'sticky_post_scripts', 999 ); 
+add_action( 'wp_enqueue_scripts', 'sticky_post_scripts', 99 ); 
 
 /* 
  * Shortcode - Sticky Post
@@ -55,9 +55,14 @@ function sticky_post_shortcode( $atts ) {
                     <div class="sticky-post--header">
                         <div class="sticky-post--header-inner">
                             <div class="sticky-post--thumbnail-wrapper">
-                                <?php if ( has_post_thumbnail() ) : ?>
-                                    <?php the_post_thumbnail( 'sticky-post--thumbnail', array( 'class' => 'sticky-post--thumbnail', 'alt' => 'Customer Thumbnial' ) ); ?>
+
+                                <?php 
+                                if ( has_post_thumbnail() ) : 
+                                $image_url = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'thumbnail');
+                                ?>
+                                    <div class="sticky-post--thumbnail" style="background-image: url(<?php echo $image_url[0]; ?>)"></div>
                                 <?php else : ?>
+
                                     
                                     <div class="sticky-post--thumbnail-placeholder placeholder-text-value">
                                         <div class="placeholder-text-source"><?php echo $ret_title; ?></div>

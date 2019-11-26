@@ -15,7 +15,7 @@ A sticky, random post plugin for WordPress.
      
      **Usage:** ```<?php echo do_shortcode( '[sticky_post post_type="post" theme="dark"]' ); ?>```
 
-3. Paste it inside ```<body>``` tag.
+3. Paste it before ending ```</body>``` tag.
 
    _* sticky-post plugin adds ```position: relative;``` property to its parent_
 

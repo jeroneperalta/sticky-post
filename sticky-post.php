@@ -15,7 +15,7 @@ function sticky_post_scripts() {
     wp_enqueue_style( 'sticky-post', plugin_dir_url( __FILE__ ) . 'css/style.css' );
     wp_enqueue_script( 'sticky-post', plugin_dir_url( __FILE__ ) . 'js/app.js', '', '', true );
 }
-add_action( 'wp_enqueue_scripts', 'sticky_post_scripts', 999 ); 
+add_action( 'wp_enqueue_scripts', 'sticky_post_scripts', 9999 ); 
 
 /* 
  * Shortcode - Sticky Post
